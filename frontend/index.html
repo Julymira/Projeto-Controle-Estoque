@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Controle de Estoque</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>📦 Sistema de Controle de Estoque</h1>
+        <nav class="tabs">
+            <button class="tab active" data-tab="produtos">Produtos</button>
+            <button class="tab" data-tab="movimentacoes">Movimentações</button>
+            <button class="tab" data-tab="baixo-estoque">Baixo Estoque</button>
+            <button class="tab" data-tab="dashboard">Dashboard</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="produtos" class="tab-content active">
+            <h2>Gestão de Produtos</h2>
+            <div id="produtos-form"></div>
+            <div id="produtos-lista"></div>
+        </section>
+
+        <section id="movimentacoes" class="tab-content">
+            <h2>Movimentações de Estoque</h2>
+            <div id="movimentacoes-form"></div>
+            <div id="movimentacoes-lista"></div>
+        </section>
+
+        <section id="baixo-estoque" class="tab-content">
+            <h2>Produtos com Baixo Estoque</h2>
+            <div id="baixo-estoque-lista"></div>
+        </section>
+
+        <section id="dashboard" class="tab-content">
+            <h2>Dashboard</h2>
+            <div id="dashboard-conteudo"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sistema de Estoque Simples</p>
+    </footer>
+</div>
+
+<!-- <script src="js/db.js"></script> -->
+<script src="js/ui.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
